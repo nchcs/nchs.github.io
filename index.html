@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Web Developer & Designer</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <!-- Particles.js for cool background effects -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Animations CSS -->
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Services CSS -->
+    <link rel="stylesheet" href="css/services.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-container">
+                <a href="#home" class="logo">Portfolio</a>
+                
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#testimonials" class="nav-link">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+        <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1 class="hero-title">Hi, I'm <span class="text-gradient">Nicholas Chiong</span></h1>
+                <p class="hero-subtitle">I'm a full-stack developer.</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn ripple">View My Work</a>
+                    <a href="#contact" class="btn btn-outline ripple">Contact Me</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mouse Scroll Indicator -->
+        <div class="mouse-scroll"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            
+            <div class="about-container centered-about">
+                <div class="about-content" data-aos="fade-up">
+                    <h3>Hi!</h3>
+                    <p>I'm a passionate developer with experience in full-stack development, banking and healthcare.</p>
+                    <p>My goal is to grow as a software engineer along with being a vital part of the team!</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Wave Animation -->
+        <canvas id="wave-canvas"></canvas>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">My Services</h2>
+            
+            <div class="services-container">
+                <!-- Two main service cards -->
+                <div class="service-card card-3d large-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fab fa-apple"></i>
+                    </div>
+                    <h3 class="service-title">iOS Apps</h3>
+                    <p class="service-description">
+                        Native iOS applications built with Swift and SwiftUI that provide exceptional user experiences. From concept to App Store deployment, I handle the entire development lifecycle including UI/UX design, development, testing, and submission.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Native Swift & SwiftUI development</li>
+                        <li><i class="fas fa-check"></i> Interactive UI/UX design</li>
+                        <li><i class="fas fa-check"></i> API integration & Core frameworks</li>
+                        <li><i class="fas fa-check"></i> App Store submission & management</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card card-3d large-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3 class="service-title">Full-Stack Development</h3>
+                    <p class="service-description">
+                        End-to-end web applications built with modern technologies for both frontend and backend. From responsive interfaces to robust server-side architecture, database design and cloud deployment.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Frontend with React/Vue/Angular</li>
+                        <li><i class="fas fa-check"></i> Backend with Node.js/Django/Rails</li>
+                        <li><i class="fas fa-check"></i> Database design & optimization</li>
+                        <li><i class="fas fa-check"></i> Cloud deployment & scalability</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Animated Circles Background -->
+        <div class="animated-circle floating-element"></div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">My Projects</h2>
+            
+            <div class="filter-buttons" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ios">iOS Apps</button>
+                <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+                <button class="filter-btn" data-filter="other">Other Projects</button>
+            </div>
+            
+            <div class="projects-container">
+                <!-- iOS Projects -->
+                <div class="project-card ios" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="images/project1.svg" alt="iOS Project 1">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">iOS Development</span>
+                        <h3 class="project-title">Fitness Tracking App</h3>
+                        <p class="project-description">A native iOS app built with Swift for tracking workouts, nutrition, and fitness goals.</p>
+                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="project-card ios" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="images/project2.svg" alt="iOS Project 2">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">iOS Development</span>
+                        <h3 class="project-title">Recipe Finder</h3>
+                        <p class="project-description">An iOS app using SwiftUI that helps users discover recipes based on available ingredients.</p>
+                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="project-card ios" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="images/project3.svg" alt="iOS Project 3">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">iOS Development</span>
+                        <h3 class="project-title">Weather Forecast</h3>
+                        <p class="project-description">A beautiful weather app with animations and detailed forecasts using Core Location and Weather API.</p>
+                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Full-Stack Projects -->
+                <div class="project-card fullstack" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image">
+                        <img src="images/project4.jpg" alt="Full-Stack Project 1">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Full-Stack Development</span>
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">A complete e-commerce solution with React frontend, Node.js backend, and MongoDB database.</p>
+                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="project-card fullstack" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-image">
+                        <img src="images/project5.jpg" alt="Full-Stack Project 2">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Full-Stack Development</span>
+                        <h3 class="project-title">Task Management System</h3>
+                        <p class="project-description">A productivity platform with Vue.js frontend and Django REST API backend.</p>
+                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="project-card fullstack" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-image">
+                        <img src="images/project6.jpg" alt="Full-Stack Project 3">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Full-Stack Development</span>
+                        <h3 class="project-title">Social Media Dashboard</h3>
+                        <p class="project-description">An analytics dashboard using React, Express, and various social media APIs.</p>
+                        <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Client Testimonials</h2>
+            
+            <div class="testimonials-container">
+                <div class="testimonial-card" data-aos="fade-up">
+                    <div class="testimonial-text">
+                        "Working with this developer was an absolute pleasure. They delivered the project on time and exceeded all of our expectations. The website is beautiful, functional, and has helped us grow our business."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-image">
+                            <img src="images/testimonial1.svg" alt="John Doe">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>John Doe</h4>
+                            <p>CEO, Company Name</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            
+            <div class="contact-container">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Let's Talk About Your Project</h3>
+                    <p>Feel free to reach out if you're looking for a developer for your project, have a question, or just want to connect.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-detail-info">
+                                <h4>Location</h4>
+                                <p>New York City, NY, USA</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-detail-info">
+                                <h4>Email</h4>
+                                <p>hello@yourname.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-detail-info">
+                                <h4>Phone</h4>
+                                <p>+1 (123) 456-7890</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" class="form-control" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" class="form-control" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" class="form-control" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <a href="#" class="footer-logo">Portfolio</a>
+                    <p>Creating beautiful, functional websites and applications that help businesses grow.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-title">Services</h3>
+                    <ul>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Responsive Design</a></li>
+                        <li><a href="#">SEO Optimization</a></li>
+                        <li><a href="#">E-Commerce Solutions</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt footer-contact-icon"></i>
+                            New York City, NY, USA
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope footer-contact-icon"></i>
+                            hello@yourname.com
+                        </li>
+                        <li>
+                            <i class="fas fa-phone footer-contact-icon"></i>
+                            +1 (123) 456-7890
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Your Portfolio. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+    
+    <!-- Animations JavaScript -->
+    <script src="js/animations.js"></script>
+</body>
+</html>
