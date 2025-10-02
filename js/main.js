@@ -75,19 +75,10 @@ document.addEventListener('DOMContentLoaded', function() {
         projectCards.forEach(card => {
           if (filter === 'all') {
             card.style.display = 'block';
-            setTimeout(() => {
-              card.classList.add('visible');
-            }, 10);
           } else if (card.classList.contains(filter)) {
             card.style.display = 'block';
-            setTimeout(() => {
-              card.classList.add('visible');
-            }, 10);
           } else {
-            card.classList.remove('visible');
-            setTimeout(() => {
-              card.style.display = 'none';
-            }, 300);
+            card.style.display = 'none';
           }
         });
       });
